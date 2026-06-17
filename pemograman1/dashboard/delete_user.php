@@ -1,11 +1,11 @@
 <?php 
-    include "../users.php";
-    include "../database.php";
+    include '../users.php';
+    include '../database.php';
 
     $db = new Database();
     $conn = $db->connect();
-    $user = new User($conn);
+    $users = new Users($conn);
 
     $id = $_GET['id'];
-    $user->hapus(id);
-    header("Location daftar_user.php");
+    $users->hapus($id);
+    header("Location: index.php");

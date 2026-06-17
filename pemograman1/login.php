@@ -10,7 +10,7 @@ $password = $_POST['input_password'];
 
 $db = new Database();
 $conn = $db->connect();
-$user = new User($conn);
+$user = new Users($conn);
 
 $ditemukan = $user->login($username, $password);
 

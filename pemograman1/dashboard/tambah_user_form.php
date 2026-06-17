@@ -1,12 +1,12 @@
 <?php
-include '../user.php';
+include '../users.php';
 include '../database.php';
 
 $db = new Database();
 $conn = $db->connect();
-$user = new User($conn);
+$users = new Users($conn);
 
-$result = $user->getAllUsers();
+$result = $users->getAllUsers();
 $daftar_user = $result->fetch_all(MYSQLI_ASSOC);
 ?>
 <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
