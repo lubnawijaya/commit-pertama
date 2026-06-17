@@ -32,7 +32,8 @@
                   <td><?php echo $user["username"];?></td>
                   <td><?php echo $user["email"];?></td>
                   <td><?php echo $user["asal"];?></td>
-                  <td> Delete | Edit </td>
+                  <td> 
+                    <a href> ="delete" </td>
                 </tr>
                 <?php
                 }
