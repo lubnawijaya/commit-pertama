@@ -21,6 +21,13 @@ if($ditemukan == false){
 }else{
     $_SESSION['is_logged_in'] = true;
     header("Location: dashboard/index.php");
+    if (!isset($_SESSION['login_count'])) {
+    $_SESSION['login_count'] = 0;
+}
+    $_SESSION['login_count']++;
+
+// Lalu redirect ke dashboard
+    header('Location: dashboard/index.php');
     exit;
 }
 
