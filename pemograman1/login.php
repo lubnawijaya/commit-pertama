@@ -26,7 +26,6 @@ if($ditemukan == false){
 }
     $_SESSION['login_count']++;
 
-// Lalu redirect ke dashboard
     header('Location: dashboard/index.php');
     exit;
 }
